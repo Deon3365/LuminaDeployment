@@ -1,0 +1,192 @@
+﻿Diagnose log at 2026-05-21T02:21:31Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.6.1+786ab03440ddc82e807a97c0e540f5247e44cec6
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\gideo
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=GIDEONGANAH
+GIT_TRACE2_PARENT_SID=21917f75-4d0d-4f45-a2e1-0d12baf524d0
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+OneDrive=C:\Users\gideo\OneDrive
+RegionCode=EMEA
+TMP=C:\Users\gideo\AppData\Local\Temp
+PROCESSOR_REVISION=7502
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+unity=C:\Program Files\Unity\Editor
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+TEMP=C:\Users\gideo\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\gideo\AppData\Local
+MSYSTEM=MINGW64
+TERM=xterm-256color
+COLORTERM=truecolor
+USERDOMAIN=GIDEONGANAH
+ProgramFiles(x86)=C:\Program Files (x86)
+platformcode=M7
+Path=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\gideo\bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\Program Files\MATLAB\R2025b\runtime\win64;C:\Program Files\MATLAB\R2025b\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Users\gideo\.local\bin;C:\Users\gideo\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\gideo\AppData\Local\Programs\Python\Python310\;C:\Users\gideo\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\gideo\AppData\Local\Programs\Python\Python313\;C:\Users\gideo\AppData\Local\Microsoft\WindowsApps;C:\Users\gideo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\gideo\.dotnet\tools;C:\Users\gideo\AppData\Local\Programs\Ollama;C:\Users\gideo\AppData\Local\Programs\IBM Bob\bin;C:\Users\gideo\AppData\Local\Programs\Antigravity IDE\bin
+PROCESSOR_LEVEL=25
+PROCESSOR_IDENTIFIER=AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD
+TMPDIR=C:\Users\gideo\AppData\Local\Temp
+PROMPT=$P$G
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+NUMBER_OF_PROCESSORS=16
+SESSIONNAME=Console
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+EFC_13164_4126798990=1
+PLINK_PROTOCOL=ssh
+ProgramData=C:\ProgramData
+ProgramW6432=C:\Program Files
+ProgramFiles=C:\Program Files (x86)
+OnlineServices=Online Services
+AMDRMSDKPATH=C:\Program Files\AMD\RyzenMasterSDK\
+SystemRoot=C:\windows
+EFC_13164_1592913036=1
+HOME=C:\Users\gideo
+LC_CTYPE=C.UTF-8
+CommonProgramW6432=C:\Program Files\Common Files
+LOGONSERVER=\\GIDEONGANAH
+USERPROFILE=C:\Users\gideo
+USERDOMAIN_ROAMINGPROFILE=GIDEONGANAH
+APPDATA=C:\Users\gideo\AppData\Roaming
+HOMEDRIVE=C:
+USERNAME=gideo
+PROCESSOR_ARCHITEW6432=AMD64
+PROCESSOR_ARCHITECTURE=x86
+OS=Windows_NT
+ComSpec=C:\windows\system32\cmd.exe
+SystemDrive=C:
+windir=C:\windows
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\gideo\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\gideo\AppData\Local\Temp\da1c4e86a5cce62e966607c3'... OK
+Reading from temporary file 'C:\Users\gideo\AppData\Local\Temp\da1c4e86a5cce62e966607c3'... OK
+Deleting temporary file 'C:\Users\gideo\AppData\Local\Temp\da1c4e86a5cce62e966607c3'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\gideo
+UserDataDirectoryPath: C:\Users\gideo\.gcm
+GetCurrentDirectory(): C:\Users\gideo\OneDrive\Desktop\Agentic bible interpretator with phone app\LuminaDeployment
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:58897/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.51.2.windows.1'
+Locating current repository...Git repository at 'C:/Users/gideo/OneDrive/Desktop/Agentic bible interpretator with phone app/LuminaDeployment/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=main
+file:C:/Users/gideo/.gitconfig	usre.name=Gideon
+file:C:/Users/gideo/.gitconfig	user.email=gideon.ganah.gg@gmail.com
+file:C:/Users/gideo/.gitconfig	user.name=Gideon
+file:C:/Users/gideo/.gitconfig	user.mail=gg24abh@herts.ac.uk
+file:C:/Users/gideo/.gitconfig	init.default=branch
+file:C:/Users/gideo/.gitconfig	init.default=branch
+file:C:/Users/gideo/.gitconfig	init.default=branch
+file:C:/Users/gideo/.gitconfig	init.default=branch
+file:C:/Users/gideo/.gitconfig	init.default=branch
+file:C:/Users/gideo/.gitconfig	core.editor=notepad
+file:C:/Users/gideo/.gitconfig	credential.helper=manager-core
+file:C:/Users/gideo/.gitconfig	credential.https://huggingface.co.provider=generic
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/Deon3365/LuminaDeployment.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\gideo\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\gideo\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

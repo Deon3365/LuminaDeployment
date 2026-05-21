@@ -1,0 +1,26 @@
+name: Sync to Hugging Face Spaces
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Push to Hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          # INSTRUCTIONS:
+          # 1. Create a Spaces repository on Hugging Face (e.g. choose Docker template).
+          # 2. Add your HF_TOKEN (write access token from Hugging Face Settings -> Tokens) as a Secret in your GitHub Repo.
+          # 3. Change "gideon/lumina-bible-interpreter" below to your actual Hugging Face username and Space name.
+          git push --force https://GideonGanah:${HF_TOKEN}@huggingface.co/spaces/GideonGanah/lumina-bible-interpreter main
