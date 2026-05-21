@@ -25,3 +25,4 @@ jobs:
           # 3. Change "gideon/lumina-bible-interpreter" below to your actual Hugging Face username and Space name.
           git push --force https://GideonGanah:${HF_TOKEN}@huggingface.co/spaces/GideonGanah/lumina-bible-interpreter main
 
+
