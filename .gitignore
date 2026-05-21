@@ -1,3 +1,23 @@
+# Environment and project files
+.venv/
+venv/
+env/
+*.env
+
+# Database and vector store files
 rag_db/
 *.bin
 *.sqlite3
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter notebook checkpoint files
+.ipynb_checkpoints
+
+# Hugging Face model files (if large, exclude from repo)
+*.safetensors
+*.bin
+models/
