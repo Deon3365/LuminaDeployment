@@ -1,0 +1,32 @@
+[
+  {
+    "source": "John 3:16",
+    "targets": ["Romans 5:8", "1 John 4:9", "Ephesians 2:4", "Isaiah 53:6"],
+    "note": "Divine love manifested in sacrifice."
+  },
+  {
+    "source": "John 1:1",
+    "targets": ["Genesis 1:1", "Colossians 1:15-17", "Hebrews 1:2-3", "1 John 1:1"],
+    "note": "The pre-existence and creative role of the Logos."
+  },
+  {
+    "source": "Genesis 1:1",
+    "targets": ["Psalm 33:6", "Hebrews 11:3", "Revelation 4:11"],
+    "note": "Creation by the word of God."
+  },
+  {
+    "source": "Romans 3:23",
+    "targets": ["Isaiah 53:6", "Romans 5:12", "Ecclesiastes 7:20"],
+    "note": "Universality of human sin."
+  },
+  {
+    "source": "Hebrews 11:1",
+    "targets": ["2 Corinthians 5:7", "Romans 8:24-25", "1 Peter 1:8"],
+    "note": "Faith as confidence in the unseen."
+  },
+  {
+    "source": "Exodus 20:3",
+    "targets": ["Deuteronomy 6:4", "Matthew 4:10", "Isaiah 45:5"],
+    "note": "Exclusive worship of YHWH."
+  }
+]

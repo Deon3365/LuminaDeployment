@@ -1,0 +1,92 @@
+[
+  {
+    "id": "gc_001",
+    "category": "hellenization",
+    "title": "Hellenization: The Spread of Greek Culture (332 BCE – 31 BCE)",
+    "content": "Hellenization refers to the spread of Greek language, culture, and social structures throughout the Mediterranean and Near East following the conquests of Alexander the Great. This process created a 'common culture' (Koine) that unified diverse ethnic groups. In Judea, Hellenization was a source of intense conflict, leading to the Maccabean Revolt when the Seleucid king Antiochus IV Epiphanes attempted to suppress Jewish law. However, by the New Testament era, Hellenization was pervasive: Greek was the lingua franca, Greek philosophy influenced Jewish thought (e.g., Philo of Alexandria), and many Jews adopted Greek names. The Septuagint (LXX), the Greek translation of the Hebrew Bible, was the primary scripture for the early church. Understanding Hellenization is key to interpreting the 'Hellenists' vs. 'Hebrews' tension in Acts 6 and Paul's engagement with Greek audiences.",
+    "tags": ["hellenization", "alexander_the_great", "koine_greek", "septuagint", "history"],
+    "period": "332 BCE – 31 BCE",
+    "relevance": "NT and Intertestamental period"
+  },
+  {
+    "id": "gc_002",
+    "category": "philosophy",
+    "title": "Stoicism: Reason, Virtue, and the Logos",
+    "content": "Stoicism was a major Greek philosophy founded by Zeno of Citium. Stoics believed that the universe was governed by a divine, rational principle called the **Logos** (Word/Reason). They emphasized living in accordance with nature, exercising self-control (apatheia), and fulfilling one's duty. The goal was virtue, which led to 'eudaimonia' (flourishing). Paul famously debated Stoic and Epicurean philosophers in Athens (Acts 17). Stoic terminology heavily influenced the New Testament: the use of 'Logos' in John 1:1, the emphasis on 'virtue' (arete) and 'contentment' (autarkeia) in Philippians 4:11, and the lists of vices and virtues common in the Pauline epistles. Stoicism's universalism also provided a conceptual bridge for the early church's mission to the Gentiles.",
+    "tags": ["stoicism", "logos", "philosophy", "virtue", "acts_17", "paul"],
+    "period": "3rd c. BCE – 2nd c. CE",
+    "relevance": "NT, Paul, John"
+  },
+  {
+    "id": "gc_003",
+    "category": "philosophy",
+    "title": "Epicureanism: Materialism and the Pursuit of Peace",
+    "content": "Epicureanism, founded by Epicurus, was a materialistic philosophy that taught that the world was composed of atoms and that the gods, if they existed, were uninvolved in human affairs. Their goal was 'ataraxia'—peace of mind and freedom from fear (especially the fear of death and divine judgment). While often misrepresented as hedonism, it actually advocated for simple pleasures and the avoidance of pain. Paul's encounter with Epicureans in Acts 17 is significant because his message of the resurrection directly contradicted their materialist view that the soul dissolved at death. Epicurean influence is often seen as the 'foil' against which New Testament writers argued for divine providence and future judgment.",
+    "tags": ["epicureanism", "philosophy", "materialism", "acts_17", "resurrection"],
+    "period": "4th c. BCE – 3rd c. CE",
+    "relevance": "NT, Acts 17"
+  },
+  {
+    "id": "gc_004",
+    "category": "social_structure",
+    "title": "Honor-Shame Culture in the Greco-Roman World",
+    "content": "The Greco-Roman world was fundamentally an 'Honor-Shame' society. Honor (tine/doxa) was a person's public worth, determined by birth, wealth, status, and virtuous deeds. Shame (aischyne) was the loss of this public standing. Social life was a constant 'agon' (contest) for honor. This explains why the 'shame of the cross' (Hebrews 12:2) was such a radical concept; a crucified God was an oxymoron to the Greek mind. Paul redefines honor in the New Testament, teaching that believers should 'boast only in the Lord' and that God chooses the 'shameful' things of the world to shame the wise (1 Corinthians 1:27). Many New Testament commands (e.g., regarding hair length, table manners, and legal disputes) are rooted in navigating the honor-shame dynamics of the time.",
+    "tags": ["honor_shame", "social_values", "culture", "cross", "status"],
+    "period": "Classical – Roman era",
+    "relevance": "Entire NT"
+  },
+  {
+    "id": "gc_005",
+    "category": "social_structure",
+    "title": "Patronage and Clientelism",
+    "content": "Patronage was the essential social 'glue' of the Roman Empire. A 'Patron' (patronus) was a person of higher status who provided resources, legal protection, or social advancement to a 'Client' (cliens) of lower status. In return, the client provided the patron with public honor, loyalty, and political support. This relationship was based on 'charis' (grace/favor). When Paul speaks of 'grace' (charis) and 'faith' (pistis), he is using the language of patronage. God is the ultimate Patron who gives grace (unmerited favor), and the believer's response is 'faith'—which in this context implies loyalty and public allegiance to the Patron. This model illuminates why 'faith without works' (James 2) was inconceivable; a client who received favor but gave no loyalty/service was shameful.",
+    "tags": ["patronage", "grace", "faith", "charis", "pistis", "social_structure"],
+    "period": "Roman Republic – Empire",
+    "relevance": "NT, Paul, James"
+  },
+  {
+    "id": "gc_006",
+    "category": "politics",
+    "title": "The Imperial Cult: Caesar as Lord",
+    "content": "The Imperial Cult was the religious worship of the Roman Emperor as a god or 'Son of God' (Divi Filius). Emperors like Augustus were hailed as 'Savior of the World' who brought 'Peace' (Pax Romana). Temples were built to the Emperor, and sacrifices were made for his well-being. This created a direct theological conflict for early Christians. When Christians proclaimed 'Jesus is Lord' (Kyrios Iesous), they were implicitly saying 'Caesar is not.' Much of the language in the New Testament (Savior, Lord, Gospel/Evangelion, Peace, Kingdom) was shared with the Imperial Cult. The book of Revelation is the ultimate critique of the Imperial Cult, portraying Rome as a 'Beast' that demands worship belonging only to God.",
+    "tags": ["imperial_cult", "caesar", "lord", "savior", "revelation", "politics"],
+    "period": "31 BCE – 4th c. CE",
+    "relevance": "NT, Revelation, Acts"
+  },
+  {
+    "id": "gc_007",
+    "category": "religion",
+    "title": "Mystery Religions and Gnosticism",
+    "content": "Mystery religions (e.g., the Cult of Isis, Mithraism, Eleusinian Mysteries) were private cults that promised initiates secret knowledge, a personal relationship with a deity, and a better afterlife. They often involved elaborate initiation rituals. **Gnosticism**, which emerged more fully in the 2nd century but had 'proto-Gnostic' roots in the 1st, emphasized 'gnosis' (secret knowledge) as the means of escape from a defective material world created by a lesser god. NT writers like John and Paul (especially in Colossians and 1 John) argued against these ideas, emphasizing the goodness of creation, the physical incarnation of Jesus, and that salvation is available to all through faith, not secret knowledge.",
+    "tags": ["mystery_religions", "gnosticism", "gnosis", "heresy", "1_john", "colossians"],
+    "period": "Hellenistic – Late Antiquity",
+    "relevance": "NT Epistles, 1 John"
+  },
+  {
+    "id": "gc_008",
+    "category": "social_structure",
+    "title": "Slavery in the Greco-Roman World",
+    "content": "Slavery was a foundational economic institution in the Roman Empire, but it differed from modern racial slavery. Slaves were often prisoners of war or people in debt; they could be highly educated (doctors, teachers, managers). Manumission (freedom) was common after a period of service. However, slaves were legally 'living tools' without honor. The NT writers did not call for the abolition of slavery (which would have been seen as a violent revolution), but they subverted it from within. Paul's letter to Philemon asks him to receive his runaway slave Onesimus 'no longer as a slave, but as a beloved brother.' Commands to slaves and masters (Ephesians 6, Colossians 3) emphasize their equal status before the one true Master in heaven.",
+    "tags": ["slavery", "social_structure", "philemon", "onesimus", "economy"],
+    "period": "Roman era",
+    "relevance": "Pauline Epistles, Philemon"
+  },
+  {
+    "id": "gc_009",
+    "category": "geography",
+    "title": "The Diaspora and the Hellenistic City (Polis)",
+    "content": "The Greek *polis* (city) was the center of social, religious, and political life. Cities like Ephesus, Corinth, and Philippi were centers of trade and pluralism. For Diaspora Jews, the city was a place where they had to negotiate their identity. The *agora* (marketplace) was where Paul preached and debated. The *gymnasium* and *theater* were centers of Greek culture that many Jews avoided. Paul's missionary strategy focused on these major urban centers, using the existing network of Roman roads (*Via Egnatia*, *Via Appia*) and the safety of the *Pax Romana* to spread the Gospel rapidly across the empire.",
+    "tags": ["polis", "city", "mission", "paul", "geography", "pax_romana"],
+    "period": "Hellenistic – Roman era",
+    "relevance": "Acts, Pauline Epistles"
+  },
+  {
+    "id": "gc_010",
+    "category": "rhetoric",
+    "title": "Greco-Roman Rhetoric and Letter Writing",
+    "content": "The Greco-Roman world prized the art of persuasion (rhetoric). Education centered on mastering forms of speech: judicial (legal), deliberative (political), and epideictic (praise/blame). Paul’s letters, while following the standard epistolary form (Opening, Thanksgiving, Body, Closing), are masterpieces of Greco-Roman rhetoric. For example, Galatians is often analyzed as a 'deliberative' speech meant to persuade the audience to stay with the true Gospel. 2 Corinthians contains 'fools' speech'—a standard rhetorical device. Understanding these forms helps interpreters distinguish between Paul's core arguments and his use of stylistic irony or cultural idioms.",
+    "tags": ["rhetoric", "epistle", "persuasion", "paul", "education"],
+    "period": "5th c. BCE – 2nd c. CE",
+    "relevance": "Pauline Epistles"
+  }
+]

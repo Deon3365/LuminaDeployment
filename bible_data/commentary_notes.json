@@ -1,0 +1,38 @@
+[
+  {
+    "reference": "John 3:16",
+    "tradition": "Reformed",
+    "note": "Focuses on the particularity of the 'world' (often interpreted as all kinds of people, not every individual) and the sovereignty of God's love as the cause of salvation.",
+    "topic": "Sovereignty"
+  },
+  {
+    "reference": "John 3:16",
+    "tradition": "Lutheran",
+    "note": "Emphasizes the 'objectivity' of the Gospel promise—that the gift is truly offered to all through the Word, and faith is the hand that receives it.",
+    "topic": "Justification"
+  },
+  {
+    "reference": "John 3:16",
+    "tradition": "Roman Catholic",
+    "note": "Highlights the necessity of responding to God's love with a 'faith working through love' (Gal 5:6), emphasizing the sacramental context of rebirth mentioned earlier in John 3.",
+    "topic": "Grace and Response"
+  },
+  {
+    "reference": "Romans 3:23-24",
+    "tradition": "Protestant",
+    "note": "Central text for 'Sola Fide'. Justification is a forensic declaration—God declaring the sinner righteous because of Christ's work, received by faith alone.",
+    "topic": "Justification"
+  },
+  {
+    "reference": "John 1:1",
+    "tradition": "Eastern Orthodox",
+    "note": "Focuses on the 'Logos' as the basis for theosis (divinization). God became man so that man might become like God. The Word is the archetype of all creation.",
+    "topic": "Incarnation"
+  },
+  {
+    "reference": "Hebrews 11:1",
+    "tradition": "Wesleyan",
+    "note": "Emphasis on faith as an active, living assurance that transforms the believer's life, leading toward Christian perfection and holiness.",
+    "topic": "Sanctification"
+  }
+]

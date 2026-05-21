@@ -1,0 +1,182 @@
+[
+  {
+    "id": "jc_001",
+    "category": "second_temple_overview",
+    "title": "Second Temple Period Overview (516 BCE – 70 CE)",
+    "content": "The Second Temple period spans from the rebuilding of the Jerusalem Temple after the Babylonian exile (516 BCE) to its destruction by Rome in 70 CE. This era forms the direct historical backdrop for the entire New Testament and the later writings of the Old Testament (Ezra, Nehemiah, Daniel, Malachi). During this period Judaism was dramatically reshaped: the Torah became the supreme organizing principle of Jewish life, synagogues emerged as local centers of worship and education, and competing sects (Pharisees, Sadducees, Essenes, Zealots) debated Torah interpretation. Foreign domination—Persian, Greek/Seleucid, and Roman—created constant tension between cultural assimilation and Jewish distinctiveness. The Maccabean revolt (167–160 BCE) against Hellenization gave rise to the Hasmonean dynasty and became a defining moment of Jewish identity. By Jesus's time, Judea was a Roman client province under Herod and his successors, with the Temple as both the religious and economic heart of Jewish national life.",
+    "tags": ["second_temple", "history", "nt_context", "overview"],
+    "period": "516 BCE – 70 CE",
+    "relevance": "NT and late OT"
+  },
+  {
+    "id": "jc_002",
+    "category": "pharisees",
+    "title": "Pharisees: Theology, Practice, and Social Role",
+    "content": "The Pharisees were a lay Jewish movement emerging around the 2nd century BCE, dedicated to applying Torah to every dimension of daily life. Unlike the Sadducees who restricted authority to the written Torah, Pharisees upheld the 'Oral Torah'—a body of interpretive traditions transmitted by rabbis—as equally binding. They believed in resurrection of the dead, angels, the sovereignty of God in history, and divine reward and punishment. Pharisees dominated the synagogue system and were highly respected by ordinary people. Their 613 commandments (mitzvot) covered food laws, Sabbath, purity, tithing, and prayer. The NT portrays frequent debates between Jesus and Pharisees over Sabbath halakha, purity, and the nature of Torah authority. Paul identified himself as a Pharisee (Philippians 3:5). After 70 CE the Pharisees became the foundation of Rabbinic Judaism. Understanding their theology is essential for interpreting Matthew 23, Romans 3, Galatians, and debates about law and grace.",
+    "tags": ["pharisees", "oral_torah", "resurrection", "purity", "law", "nt_context"],
+    "period": "2nd c. BCE – 1st c. CE",
+    "relevance": "NT"
+  },
+  {
+    "id": "jc_003",
+    "category": "sadducees",
+    "title": "Sadducees: Priestly Aristocracy and Temple Politics",
+    "content": "The Sadducees were the priestly aristocratic class who controlled the Jerusalem Temple, the Sanhedrin, and much of Judea's economic life. They accepted only the written Torah (Pentateuch) as authoritative, rejecting belief in the resurrection, angels, and oral tradition. Politically they collaborated with Rome to maintain Temple operations and their own power. The high priest was typically a Sadducee. They collected Temple taxes, oversaw the sacrificial system, and managed the vast Temple treasury. Their rejection of resurrection is the backdrop for the controversy in Mark 12:18–27. The Sadducees disappeared as a movement after the Temple's destruction in 70 CE because their identity was inseparable from Temple worship. For NT interpretation, understanding Sadducee power helps explain why the chief priests engineered Jesus's arrest—they saw him as a threat to political stability and Temple authority.",
+    "tags": ["sadducees", "temple", "priesthood", "resurrection", "sanhedrin"],
+    "period": "2nd c. BCE – 70 CE",
+    "relevance": "NT"
+  },
+  {
+    "id": "jc_004",
+    "category": "essenes",
+    "title": "Essenes and the Dead Sea Scrolls Community",
+    "content": "The Essenes were a separatist Jewish movement who rejected the Jerusalem Temple establishment as corrupt. The community at Qumran (likely Essene) produced the Dead Sea Scrolls, discovered 1947–1956, which include the oldest known Hebrew manuscripts of the OT and community documents revealing their theology. Essenes practiced strict ritual purity, communal ownership, celibacy (in some branches), and intensive Torah study. They believed they were the true covenant community living in the 'last days' and expected an imminent apocalyptic war between the 'Sons of Light' and 'Sons of Darkness.' Their concept of a 'Teacher of Righteousness' opposing a 'Wicked Priest' illuminates the sectarian tensions of the period. The Scrolls contain hymns, biblical commentaries (pesharim), and legal texts that shed enormous light on NT concepts like the 'New Covenant,' community organization, and eschatological expectation.",
+    "tags": ["essenes", "dead_sea_scrolls", "qumran", "apocalyptic", "covenant", "purity"],
+    "period": "2nd c. BCE – 68 CE",
+    "relevance": "NT background"
+  },
+  {
+    "id": "jc_005",
+    "category": "synagogue",
+    "title": "The Synagogue: Origin, Structure, and Worship",
+    "content": "The synagogue (Greek: synagoge; Hebrew: bet knesset, 'house of assembly') emerged during or after the Babylonian exile as a place for Torah reading, prayer, and community gathering—a substitute for the Temple when Jews lived far from Jerusalem. By the first century CE, synagogues existed throughout the Diaspora and in Judea itself. Worship included: the Shema (Deuteronomy 6:4–9) recited twice daily; the Amidah (Eighteen Benedictions) of standing prayer; public reading of the Torah (Parashah) in the original Hebrew with Aramaic translation (Targum); reading from the Prophets (Haftarah); and a sermon (derashah). Any adult male could lead prayer and read Torah; a visiting teacher like Jesus or Paul would be invited to speak (Luke 4:16–21; Acts 13:15). The synagogue was also a court (bet din), school, and community center. Expulsion from the synagogue (aposynagogos in John 9:22) was severe social and religious punishment.",
+    "tags": ["synagogue", "worship", "torah", "prayer", "shema", "diaspora"],
+    "period": "6th c. BCE – NT era",
+    "relevance": "NT and OT"
+  },
+  {
+    "id": "jc_006",
+    "category": "temple_worship",
+    "title": "The Jerusalem Temple: Sacrificial System and Daily Worship",
+    "content": "Herod's Temple (20 BCE – 70 CE) was one of the ancient world's most magnificent buildings, covering 35 acres. It was organized in concentric courts: Court of Gentiles (accessible to all), Court of Women, Court of Israel, Court of Priests, and the Holy Place and Holy of Holies (entered only by the High Priest on Yom Kippur). Daily worship (tamid) included: morning and evening burnt offerings of a lamb; burning of incense; the priestly blessing (Numbers 6:24–26); and singing of Psalms by Levitical choirs. The sacrificial system addressed sin (hattat/sin offering), guilt (asham), dedication (olah/burnt offering), and fellowship (shelamim/peace offering). An estimated 18,000 priests served in 24 rotating 'divisions' (1 Chronicles 24), coming to Jerusalem for their two-week service annually. The Temple's destruction in 70 CE was a catastrophic rupture—the book of Hebrews interprets it theologically as superseded by Christ's atonement.",
+    "tags": ["temple", "sacrifice", "priesthood", "herod", "atonement", "worship"],
+    "period": "20 BCE – 70 CE",
+    "relevance": "NT, Hebrews, Leviticus"
+  },
+  {
+    "id": "jc_007",
+    "category": "festivals",
+    "title": "Jewish Festivals: Passover (Pesach)",
+    "content": "Passover (Pesach) commemorates the Exodus from Egypt (Exodus 12) and is one of the three pilgrimage festivals (shalosh regalim) requiring Jews to appear in Jerusalem. It begins on 14 Nisan (March–April) with the slaughter of the Passover lamb and a ritual meal (Seder) featuring unleavened bread (matzah), bitter herbs (maror), lamb, and four cups of wine. The accompanying Feast of Unleavened Bread lasts seven days. Passover was the annual high point of Jerusalem: tens of thousands of pilgrims flooded the city, Temple priests slaughtered hundreds of lambs. The NT frames Jesus's crucifixion against Passover—he is the 'Lamb of God' (John 1:29), the Last Supper is a Passover Seder (Synoptics), and Paul calls Christ 'our Passover' (1 Corinthians 5:7). Understanding Passover's blood, exodus, and redemption themes is essential for interpreting crucifixion narratives and the theology of Hebrews.",
+    "tags": ["passover", "pesach", "exodus", "lamb", "atonement", "exodus", "festival"],
+    "period": "Ancient – ongoing",
+    "relevance": "NT, OT, Hebrews"
+  },
+  {
+    "id": "jc_008",
+    "category": "festivals",
+    "title": "Jewish Festivals: Pentecost (Shavuot), Tabernacles (Sukkot), Yom Kippur",
+    "content": "Shavuot (Pentecost, 'Feast of Weeks') falls 50 days after Passover, celebrating the first wheat harvest and, in rabbinic tradition, the giving of Torah at Sinai. Acts 2 locates the outpouring of the Holy Spirit at Shavuot, making the parallel between Torah-giving and Spirit-giving theologically significant. Sukkot (Tabernacles/Booths) is a harvest festival recalling the wilderness wanderings; Jews dwell in temporary shelters (sukkot) for seven days. Jesus's declaration of 'living water' in John 7 occurs during Sukkot when water was ritually poured at the Temple altar. The 'light of the world' declaration (John 8) relates to the great menorah-lighting ceremony of Sukkot. Yom Kippur (Day of Atonement) is the most solemn day, when the High Priest entered the Holy of Holies with blood to atone for Israel's sins. The scapegoat ritual (Leviticus 16) sent one goat into the wilderness bearing the nation's sins. Hebrews 9–10 extensively interprets Christ's death through Yom Kippur categories.",
+    "tags": ["shavuot", "pentecost", "sukkot", "tabernacles", "yom_kippur", "atonement", "festival"],
+    "period": "Mosaic – ongoing",
+    "relevance": "NT, OT, Hebrews, Acts"
+  },
+  {
+    "id": "jc_009",
+    "category": "purity_laws",
+    "title": "Jewish Purity Laws: Clean, Unclean, and Ritual Washing",
+    "content": "The Levitical purity system distinguished 'clean' (tahor) from 'unclean' (tame) in food, bodily states, and contact. Sources of impurity included: corpse contact (highest grade, requiring seven-day purification); skin disease (tsara'at, often mistranslated 'leprosy'); genital discharges (Leviticus 15); childbirth; and contact with unclean animals or objects. Purification typically involved immersion in a mikveh (ritual bath) containing naturally flowing water, waiting until sunset, and sometimes offering a sacrifice. Pharisees extended purity laws beyond Torah requirements to daily life—washing hands before meals (not hygiene but ritual), eating only with purified vessels, avoiding Gentile contact. Jesus's healing of a woman with a hemorrhage (Mark 5:25–34) and of lepers (Luke 17:11–19) deliberately crossed purity boundaries to challenge exclusion. The Jerusalem council's ruling on Gentile purity requirements (Acts 15) shows how purity shaped early church debates.",
+    "tags": ["purity", "clean_unclean", "mikveh", "leprosy", "gentiles", "ritual"],
+    "period": "Mosaic – NT era",
+    "relevance": "NT, Leviticus, Acts"
+  },
+  {
+    "id": "jc_010",
+    "category": "oral_torah",
+    "title": "Oral Torah, Mishnah, and Rabbinic Tradition",
+    "content": "Alongside the written Torah, Pharisaic tradition held that God gave Moses an 'Oral Torah' at Sinai, transmitted through an unbroken chain (Avot 1:1): Moses → Elders → Prophets → Men of the Great Assembly → rabbinic sages. This oral tradition was eventually codified as the Mishnah (c. 200 CE) by Rabbi Judah HaNasi, forming the core of the Talmud. The oral tradition addressed gaps and ambiguities in written Torah: how to observe Sabbath exactly, how to perform rituals, how to resolve legal disputes. Jesus's critique ('You have heard it said... but I say') in the Sermon on the Mount (Matthew 5) engages this tradition—sometimes radicalizating Torah intent, sometimes challenging oral elaborations. His authority to interpret Torah 'as one who has authority' (Mark 1:22) implied divine rather than derivative rabbinic authority. Paul's use of rabbinic argument forms (e.g., qal wa-homer/'light to heavy' reasoning in Romans 5:12–21) shows his Pharisaic training.",
+    "tags": ["oral_torah", "mishnah", "rabbinic", "tradition", "pharisees", "law"],
+    "period": "2nd c. BCE – 3rd c. CE",
+    "relevance": "NT, particularly Matthew and Paul"
+  },
+  {
+    "id": "jc_011",
+    "category": "messianic_expectations",
+    "title": "Jewish Messianic Expectations in the First Century",
+    "content": "First-century Judaism did not have a single unified 'Messiah' concept. Multiple overlapping expectations coexisted: (1) A Davidic King Messiah who would expel Rome, restore Israel's sovereignty, rebuild or purify the Temple, and inaugurate an era of peace (reflected in Psalms of Solomon 17). (2) A priestly Messiah from Aaron's line (Qumran texts expected two messiahs: royal and priestly). (3) A cosmic Son of Man figure descending from heaven to judge the nations (Daniel 7; 1 Enoch). (4) A prophet like Moses (Deuteronomy 18:15–18). Popular messianism fueled multiple revolts against Rome (Simon bar Kokhba 132 CE). Jesus's contemporaries projected warrior-king expectations onto him (John 6:15). The NT's claim that Jesus is Messiah required redefining messiahship around suffering, death, and resurrection rather than military victory—a 'stumbling block' to Jewish audiences (1 Corinthians 1:23).",
+    "tags": ["messiah", "davidic", "son_of_man", "eschatology", "expectations", "suffering_servant"],
+    "period": "2nd c. BCE – 2nd c. CE",
+    "relevance": "NT, Daniel, Isaiah"
+  },
+  {
+    "id": "jc_012",
+    "category": "prayer",
+    "title": "Jewish Prayer: Shema, Amidah, and Daily Devotion",
+    "content": "Jewish prayer in the first century centered on three daily prayer times (morning, afternoon, evening), corresponding to Temple sacrifice times. The Shema (Deuteronomy 6:4: 'Hear O Israel, the LORD our God, the LORD is one') was recited morning and evening along with surrounding blessings, affirming monotheism and covenant loyalty. The Amidah ('standing prayer,' also called Shemoneh Esreh—'Eighteen Benedictions') was the central prayer, covering praise, petition, and thanksgiving. In synagogues, prayers were led by a shaliach tzibbur ('representative of the community'). Jesus's Lord's Prayer (Matthew 6:9–13; Luke 11:2–4) follows Jewish prayer structure: address (Father), doxology, petition, and doxology. The phrase 'Abba' (Father) used by Jesus reflects intimate relational language for God that was unusual in formal Jewish prayer. Kaddish (an Aramaic doxology) and Aleinu (eschatological praise) were also common synagogue prayers.",
+    "tags": ["prayer", "shema", "amidah", "shemoneh_esreh", "lords_prayer", "synagogue"],
+    "period": "Second Temple – ongoing",
+    "relevance": "NT (Matthew 6, Luke 11)"
+  },
+  {
+    "id": "jc_013",
+    "category": "sabbath",
+    "title": "Sabbath Observance: Theology and Practice",
+    "content": "The Sabbath (Shabbat, Friday sundown to Saturday nightfall) was the most visible marker of Jewish identity in the ancient world and one of the Ten Commandments (Exodus 20:8–11; Deuteronomy 5:12–15). The Mishnah tractate Shabbat lists 39 categories of prohibited labor (melachot) derived from activities used in building the Tabernacle. Pharisees debated exactly what constituted 'work'—leading to detailed rules about carrying objects, cooking, walking distance, and medical treatment. Jesus's healing on the Sabbath repeatedly provoked conflict (Mark 3:1–6; Luke 13:10–17; John 5:1–18; 9:1–41), challenging the rabbinic Sabbath boundaries while affirming Sabbath's redemptive intent ('The Sabbath was made for man,' Mark 2:27). Theologically, Sabbath pointed backward to creation rest (Genesis 2:2–3) and forward to eschatological rest (Hebrews 4:1–11). Gentile converts to Judaism were expected to observe Sabbath, making it a major issue for early Gentile Christianity.",
+    "tags": ["sabbath", "shabbat", "law", "rest", "creation", "healing", "jesus"],
+    "period": "Mosaic – ongoing",
+    "relevance": "Gospels, Hebrews"
+  },
+  {
+    "id": "jc_014",
+    "category": "food_laws",
+    "title": "Jewish Dietary Laws (Kashrut) and Table Fellowship",
+    "content": "The dietary laws (kashrut, from 'kosher'—fit/proper) specified which animals were permitted: land animals must have split hooves and chew cud (Leviticus 11:3); fish must have fins and scales; birds of prey were forbidden; insects were generally forbidden except certain locusts. Blood was forbidden in all meat (Leviticus 17:14), requiring slaughter by a qualified shochet and salting to draw blood. Meat and dairy were not mixed (based on Exodus 23:19). These laws created a significant social barrier between Jews and Gentiles—sharing meals (table fellowship) implied endorsing each other's purity status. Peter's vision in Acts 10 (the sheet of animals) challenges food laws as a prelude to accepting Gentiles. The Jerusalem council compromise (Acts 15:20) partially addressed food issues. Paul's discussion of 'food sacrificed to idols' (1 Corinthians 8–10; Romans 14–15) navigates these tensions in mixed Jewish-Gentile communities.",
+    "tags": ["kashrut", "food_laws", "table_fellowship", "clean_unclean", "gentiles", "peter"],
+    "period": "Mosaic – ongoing",
+    "relevance": "Acts 10, Romans 14, 1 Corinthians 8"
+  },
+  {
+    "id": "jc_015",
+    "category": "covenant",
+    "title": "Covenant Theology: Sinai, Torah, and Israel's Identity",
+    "content": "Covenant (Hebrew: berit) is the organizing framework of the Old Testament relationship between God and Israel. The Sinai covenant (Exodus 19–24) established Israel as God's 'treasured possession' (segullah), 'kingdom of priests,' and 'holy nation.' Its structure resembles ancient Near Eastern suzerainty treaties: a great king lists his past benefits, gives laws, promises blessings for obedience and curses for disobedience (Deuteronomy 27–28), and requires witnesses. Earlier covenants—Noahic (universal, Genesis 9), Abrahamic (promise of land, seed, blessing; Genesis 15, 17), Davidic (eternal throne; 2 Samuel 7)—form layers that the NT writers interpret as fulfilled in Christ. Jeremiah 31:31–34 promised a 'New Covenant' written on hearts rather than stone—a text central to Hebrews 8–10, Luke 22:20, and 2 Corinthians 3. Paul's argument in Galatians 3–4 distinguishes the Abrahamic covenant of faith from the Mosaic covenant of law, placing Christ as the culmination of the Abrahamic promise.",
+    "tags": ["covenant", "sinai", "torah", "abrahamic", "new_covenant", "davidic", "law"],
+    "period": "Patriarchal – NT",
+    "relevance": "OT, Hebrews, Galatians, Romans"
+  },
+  {
+    "id": "jc_016",
+    "category": "eschatology",
+    "title": "Jewish Eschatology: End Times, Resurrection, and Apocalyptic",
+    "content": "First-century Jewish eschatology (doctrine of last things) was shaped by apocalyptic literature (Daniel, 1 Enoch, 4 Ezra, 2 Baruch). Common themes included: the 'present age' (olam hazeh) characterized by evil and suffering, followed by the 'age to come' (olam ha-ba) inaugurated by divine intervention; resurrection of the dead for final judgment; cosmic signs preceding the end (wars, famines, portents); the ingathering of exiled Israel; judgment of nations; and renewal of creation. Pharisees affirmed bodily resurrection; Sadducees denied it. The concept of 'birth pangs of the Messiah' (chevlei Mashiach) described the suffering preceding messianic redemption. Jesus's apocalyptic discourse (Mark 13; Matthew 24–25; Luke 21) engages these expectations. Paul's eschatology in 1 Thessalonians 4 and 1 Corinthians 15 presupposes Jewish resurrection theology while reframing it around Christ's resurrection as the 'first fruits.'",
+    "tags": ["eschatology", "resurrection", "apocalyptic", "age_to_come", "judgment", "son_of_man"],
+    "period": "2nd c. BCE – 1st c. CE",
+    "relevance": "NT, Daniel, Revelation"
+  },
+  {
+    "id": "jc_017",
+    "category": "ane_context",
+    "title": "Ancient Near Eastern Context for Old Testament Texts",
+    "content": "The Old Testament emerged in dialogue with ancient Near Eastern (ANE) civilizations—Mesopotamia (Babylon, Assyria, Sumer), Egypt, Canaan, and Ugarit. Creation accounts in Genesis 1–2 share structural parallels with Mesopotamian texts like the Enuma Elish (Babylonian creation myth) and the Epic of Gilgamesh (parallels to Noah's flood), but with radical theological contrasts: the God of Israel is singular, not one deity among many; creation is by word rather than divine conflict; humans are created in the divine image (tselem Elohim), not as slave labor for the gods. ANE treaty structures inform covenant passages. Psalms share imagery with Canaanite poetry (Ugaritic texts). Proverbs has parallels with Egyptian wisdom literature (Instruction of Amenemope). Understanding these parallels illuminates what the biblical authors were affirming or polemically denying about their cultural environment.",
+    "tags": ["ane", "ancient_near_east", "creation", "babylon", "egypt", "covenant", "wisdom"],
+    "period": "3000 BCE – 500 BCE",
+    "relevance": "OT (Genesis, Psalms, Proverbs)"
+  },
+  {
+    "id": "jc_018",
+    "category": "suffering_servant",
+    "title": "Isaiah's Suffering Servant and Messianic Interpretation",
+    "content": "Isaiah 40–55 (Deutero-Isaiah) contains four 'Servant Songs' (42:1–4; 49:1–6; 50:4–9; 52:13–53:12) describing a mysterious figure who suffers vicariously for Israel's sins. Isaiah 53 describes the Servant as 'despised and rejected,' bearing 'our griefs and sorrows,' 'wounded for our transgressions,' 'bruised for our iniquities,' and making 'his soul an offering for sin.' Ancient Jewish interpretation of these texts varied: some identified the Servant as corporate Israel, some as a righteous individual, and some Dead Sea Scroll texts show messianic-individual readings. The NT systematically applies Isaiah 53 to Jesus: Acts 8:32–35 (Philip's explanation to the Ethiopian eunuch), Luke 22:37 (Jesus citing Isaiah 53:12), Matthew 8:17, Romans 4:25, 1 Peter 2:24. For interpretation of the Passion narratives and Paul's atonement theology, Isaiah 53 is the single most important OT background text.",
+    "tags": ["isaiah", "suffering_servant", "atonement", "messiah", "vicarious", "passion"],
+    "period": "8th c. BCE text, NT application",
+    "relevance": "NT Passion narratives, Romans, 1 Peter"
+  },
+  {
+    "id": "jc_019",
+    "category": "social_structure",
+    "title": "Jewish Social Structure: Priests, Levites, and Ordinary Israelites",
+    "content": "Jewish society in the Second Temple period was hierarchically organized. Priests (kohanim), descendants of Aaron, performed Temple sacrifices, received tithes, and held significant social prestige. The High Priest was both religious leader and political representative before Rome. Levites were the broader tribe of Levi, serving as Temple musicians, gatekeepers, teachers, and assistants to priests. Ordinary Israelites ('Am ha-aretz,' 'people of the land') paid tithes and Temple taxes, came for pilgrimage festivals, and depended on local synagogues for religious life. Scribes (soferim) were professional Torah experts who copied Scripture and provided legal decisions. The Sanhedrin (supreme council) of 71 members—including chief priests, elders, and scribes—governed Jewish religious and civil life under Roman oversight. Social stratification shaped NT narratives: tax collectors were despised as Roman collaborators; Levites and priests appear in the Good Samaritan parable (Luke 10); scribes and chief priests conspire against Jesus.",
+    "tags": ["priests", "levites", "sanhedrin", "scribes", "social_structure", "temple"],
+    "period": "Second Temple era",
+    "relevance": "NT narratives"
+  },
+  {
+    "id": "jc_020",
+    "category": "diaspora",
+    "title": "Jewish Diaspora: Jewish Communities Outside Judea",
+    "content": "By the first century CE, more Jews lived outside Judea than within it—major communities in Alexandria (Egypt), Antioch (Syria), Babylon (Parthia), and Rome. Diaspora Jews were deeply integrated into Hellenistic city life while maintaining distinctive practices: synagogue worship, Sabbath observance, Torah reading in Greek (Septuagint/LXX), and dietary laws. The Septuagint—the Greek translation of the OT (c. 250–100 BCE)—became Scripture for Greek-speaking Jews and was adopted wholesale by early Christians. Diaspora Jews were sometimes despised for their refusal to worship city gods, leading to periodic persecution. They served as a bridge between Jewish and Gentile worlds: 'God-fearers' (sebomenoi)—Gentiles attracted to Judaism but not fully proselytized—formed a crucial audience for Paul's missionary preaching in Acts. Paul's missionary strategy of 'to the Jew first' (Romans 1:16) targeted Diaspora synagogues throughout the Mediterranean.",
+    "tags": ["diaspora", "alexandria", "septuagint", "god_fearers", "synagogue", "paul"],
+    "period": "6th c. BCE – 1st c. CE",
+    "relevance": "Acts, Pauline letters"
+  }
+]

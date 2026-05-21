@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lumina — Bible Interpretation Engine</title>
+  <meta name="description" content="Multi-agent AI-powered Bible study system offering layered, seminary-grade interpretation of any passage."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝</text></svg>"/>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header id="topbar">
+  <a class="logo" href="/">
+    <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="32" height="32" rx="8" fill="rgba(212,175,55,0.15)"/>
+      <path d="M16 5v22M10 10h12" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="16" cy="24" r="2" fill="#D4AF37" opacity="0.6"/>
+    </svg>
+    <div>
+      <div class="logo-text">Lumina</div>
+      <div class="logo-sub">Bible Interpreter</div>
+    </div>
+  </a>
+
+  <div id="search-box">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input id="search-input" type="text" placeholder="Search passage or ask a question…" autocomplete="off"/>
+    <kbd id="search-clear" style="font-size:0.75rem;color:var(--text-dim);cursor:pointer;display:none">✕</kbd>
+  </div>
+
+  <div class="topbar-actions">
+    <button class="tb-btn" id="btn-studies" title="My Studies">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+      My Studies
+    </button>
+    <select id="version-select-global" class="tb-btn" style="appearance:none;padding-right:8px;" title="Bible version">
+      <option value="kjv">KJV</option>
+      <option value="web">WEB</option>
+      <option value="asv">ASV</option>
+      <option value="bbe">BBE</option>
+    </select>
+    <div id="rag-status-badge" class="tb-btn" style="color:var(--gold);border-color:rgba(212,175,55,0.3);font-size:0.7rem;font-weight:700;display:flex;align-items:center;gap:5px;">
+      <span class="status-dot" style="width:6px;height:6px;background:var(--gold);border-radius:50%"></span> KB: Ready
+    </div>
+  </div>
+</header>
+
+<!-- SEARCH RESULTS OVERLAY -->
+<div id="search-results-overlay"></div>
+
+<!-- MAIN APP -->
+<div id="app">
+
+  <!-- LEFT: Bible Reader -->
+  <section id="bible-panel" aria-label="Bible Reader">
+    <nav id="bible-nav">
+      <select id="nav-testament" class="nav-select" title="Testament">
+        <option value="OT">Old Testament</option>
+        <option value="NT">New Testament</option>
+      </select>
+      <select id="nav-book" class="nav-select" title="Book"></select>
+      <button id="nav-chapter-prev" title="Previous chapter">‹</button>
+      <select id="nav-chapter" class="nav-select" title="Chapter"></select>
+      <button id="nav-chapter-next" title="Next chapter">›</button>
+      <select id="version-select-reader" title="Reading version">
+        <option value="kjv">KJV</option>
+        <option value="web">WEB</option>
+        <option value="asv">ASV</option>
+        <option value="bbe">BBE</option>
+      </select>
+    </nav>
+
+    <div id="bible-content" role="main">
+      <div id="chapter-heading">Select a book to begin</div>
+      <div id="verses-container"></div>
+    </div>
+  </section>
+
+  <!-- FLOATING INTERPRET BUTTON -->
+  <button id="float-interpret" aria-label="Run interpretation">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+    </svg>
+    Interpret Selected Passage
+  </button>
+
+  <!-- RIGHT: Study Panel -->
+  <section id="study-panel" aria-label="Study Panel">
+    <div id="study-header">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+      </svg>
+      <span id="study-reference">Study Panel</span>
+      <span id="study-status">Click any verse to begin</span>
+      <div class="study-actions">
+        <button class="study-action-btn" id="btn-bookmark" title="Bookmark" style="display:none">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m19 21-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+          </svg> Bookmark
+        </button>
+        <button class="study-action-btn" id="btn-copy-study" title="Copy study" style="display:none">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+          </svg> Copy
+        </button>
+      </div>
+    </div>
+
+    <div id="study-content">
+
+      <!-- Welcome -->
+      <div id="study-welcome">
+        <div class="welcome-icon">✦</div>
+        <h1 class="welcome-title">Seminary-Grade Bible Study</h1>
+        <p class="welcome-desc">
+          Click any verse in the Bible reader, then press <strong style="color:var(--gold)">Interpret</strong> to run the full 8-agent analysis pipeline — word studies, historical context, theological traditions, and more.
+        </p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:8px;">
+          <button class="tb-btn" onclick="quickLoad('John 3:16')">John 3:16</button>
+          <button class="tb-btn" onclick="quickLoad('James 2:14-26')">James 2:14-26</button>
+          <button class="tb-btn" onclick="quickLoad('Romans 8:28')">Romans 8:28</button>
+          <button class="tb-btn" onclick="quickLoad('Psalm 23:1')">Psalm 23:1</button>
+        </div>
+        <div style="margin-top:20px;padding:14px 18px;background:rgba(212,175,55,0.06);border:1px solid rgba(212,175,55,0.2);border-radius:8px;max-width:360px;text-align:left">
+          <div style="font-size:0.78rem;font-weight:700;color:var(--gold);margin-bottom:6px;">🦙 Powered by Ollama (Local AI)</div>
+          <div style="font-size:0.8rem;color:var(--text-muted);line-height:1.6">
+            All AI analysis runs <strong style="color:var(--text)">locally on your laptop</strong> via Ollama — no internet needed, no rate limits, completely free. Make sure <code style="background:var(--surface3);padding:1px 5px;border-radius:3px;color:var(--gold)">ollama serve</code> is running before interpreting.
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading -->
+      <div id="study-loading">
+        <div class="loader-ring"></div>
+        <p style="color:var(--text-muted);font-size:0.9rem;font-weight:600;">Running interpretation pipeline…</p>
+        <div class="loader-steps">
+          <div class="loader-step" id="step-intake"><span class="step-icon">🔍</span> Parsing reference</div>
+          <div class="loader-step" id="step-translation"><span class="step-icon">📜</span> Fetching translations</div>
+          <div class="loader-step" id="step-word"><span class="step-icon">🔤</span> Word study</div>
+          <div class="loader-step" id="step-historical"><span class="step-icon">🏛</span> Historical context</div>
+          <div class="loader-step" id="step-literary"><span class="step-icon">📖</span> Literary analysis</div>
+          <div class="loader-step" id="step-theological"><span class="step-icon">✝</span> Theological perspectives</div>
+          <div class="loader-step" id="step-application"><span class="step-icon">💡</span> Application & reflection</div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div id="study-results">
+
+        <!-- Summary card -->
+        <div class="study-summary">
+          <h3>✦ Summary Interpretation</h3>
+          <p id="result-summary"></p>
+        </div>
+
+        <!-- 1. Text & Translation -->
+        <div class="accordion open" id="acc-translation">
+          <div class="accordion-header" onclick="toggleAccordion('acc-translation')">
+            <span class="accordion-icon">📜</span>
+            <span class="accordion-title">Text & Translation Notes</span>
+            <span class="accordion-badge badge-textual">Textual</span>
+            <span class="accordion-chevron">▾</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-inner" id="content-translation"></div>
+          </div>
+        </div>
+
+        <!-- 2. Word Study -->
+        <div class="accordion" id="acc-word">
+          <div class="accordion-header" onclick="toggleAccordion('acc-word')">
+            <span class="accordion-icon">🔤</span>
+            <span class="accordion-title">Word Study</span>
+            <span class="accordion-badge badge-linguistic">Linguistic</span>
+            <span class="accordion-chevron">▾</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-inner" id="content-word"></div>
+          </div>
+        </div>
+
+        <!-- 3. Historical-Cultural -->
+        <div class="accordion" id="acc-historical">
+          <div class="accordion-header" onclick="toggleAccordion('acc-historical')">
+            <span class="accordion-icon">🏛</span>
+            <span class="accordion-title">Historical & Cultural Context</span>
+            <span class="accordion-badge badge-historical">Historical</span>
+            <span class="accordion-chevron">▾</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-inner" id="content-historical"></div>
+          </div>
+        </div>
+
+        <!-- 4. Literary-Canonical -->
+        <div class="accordion" id="acc-literary">
+          <div class="accordion-header" onclick="toggleAccordion('acc-literary')">
+            <span class="accordion-icon">📖</span>
+            <span class="accordion-title">Literary & Canonical Context</span>
+            <span class="accordion-badge badge-literary">Literary</span>
+            <span class="accordion-chevron">▾</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-inner" id="content-literary"></div>
+          </div>
+        </div>
+
+        <!-- 5. Theological -->
+        <div class="accordion" id="acc-theological">
+          <div class="accordion-header" onclick="toggleAccordion('acc-theological')">
+            <span class="accordion-icon">✝</span>
+            <span class="accordion-title">Theological & Doctrinal Perspectives</span>
+            <span class="accordion-badge badge-theological">Theological</span>
+            <span class="accordion-chevron">▾</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-inner" id="content-theological"></div>
+          </div>
+        </div>
+
+        <!-- 6. Application -->
+        <div class="accordion" id="acc-application">
+          <div class="accordion-header" onclick="toggleAccordion('acc-application')">
+            <span class="accordion-icon">💡</span>
+            <span class="accordion-title">Application & Reflection</span>
+            <span class="accordion-badge badge-application">Application</span>
+            <span class="accordion-chevron">▾</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-inner" id="content-application"></div>
+          </div>
+        </div>
+
+        <!-- 7. RAG Context -->
+        <div class="accordion" id="acc-rag">
+          <div class="accordion-header" onclick="toggleAccordion('acc-rag')">
+            <span class="accordion-icon">🗄️</span>
+            <span class="accordion-title">Related Context & Scriptures</span>
+            <span class="accordion-badge badge-linguistic">Grounding Data</span>
+            <span class="accordion-chevron">▾</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-inner" id="content-rag">
+              <div class="rag-section">
+                <h4>📜 Cross-References & Related Verses</h4>
+                <div id="rag-verses" class="rag-list"></div>
+              </div>
+              <div class="rag-section" style="margin-top:15px;">
+                <h4>🏛️ Cultural & Historical Background</h4>
+                <div id="rag-culture" class="rag-list"></div>
+              </div>
+              <div class="rag-section" style="margin-top:15px;">
+                <h4>✝️ Theological Commentary Snippets</h4>
+                <div id="rag-commentary" class="rag-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /study-results -->
+    </div><!-- /study-content -->
+  </section>
+
+</div><!-- /app -->
+
+<!-- MY STUDIES SIDEBAR -->
+<aside id="studies-sidebar" aria-label="Study History">
+  <div id="studies-sidebar-header">
+    <h3>📚 My Studies</h3>
+    <button id="close-studies" onclick="toggleStudiesSidebar()">✕</button>
+  </div>
+  <div id="studies-list"></div>
+</aside>
+
+<!-- TOAST -->
+<div id="toast" role="alert" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
