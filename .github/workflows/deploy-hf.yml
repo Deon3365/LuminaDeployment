@@ -22,7 +22,7 @@ jobs:
           # INSTRUCTIONS:
           # 1. Create a Spaces repository on Hugging Face (e.g. choose Docker template).
           # 2. Add your HF_TOKEN (write access token from Hugging Face Settings -> Tokens) as a Secret in your GitHub Repo.
-          # 3. Change "gideon/lumina-bible-interpreter" below to your actual Hugging Face username and Space name.
+          # 3. Change "gideon/lumina-bible-interpreter" below to your actual Hugging Face username and Space names.
           git push --force https://GideonGanah:${HF_TOKEN}@huggingface.co/spaces/GideonGanah/lumina-bible-interpreter main
 
 
