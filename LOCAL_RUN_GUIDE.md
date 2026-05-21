@@ -37,6 +37,8 @@ Open a browser and visit:
 ```
 http://127.0.0.1:8000/api/health
 ```
+or 
+http://127.0.0.1:8000
 You should see a JSON response similar to:
 ```json
 {
