@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "google/gemma-4-31b-it:free")
 
 
 class BaseAgent:
@@ -23,7 +23,8 @@ class BaseAgent:
                 "message": "Gemini API key is missing. Please set the GEMINI_API_KEY environment variable."
             }
 
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent?key={self.api_key}"
+        #url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent?key={self.api_key}"
+        url="https://openrouter.ai/api/v1/chat/completions"
         payload = {
             "contents": [
                 {
