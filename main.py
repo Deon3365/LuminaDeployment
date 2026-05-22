@@ -12,10 +12,16 @@ from pydantic import BaseModel
 from typing import List
 
 load_dotenv()
-# Log whether Gemini API key is present (will show True/False, not the key itself)
 import logging
 logging.basicConfig(level=logging.INFO)
 logging.info(f"GEMINI_API_KEY configured: {bool(os.getenv('GEMINI_API_KEY'))}")
+logging.info(f"OPENROUTER_API_KEY configured: {bool(os.getenv('OPENROUTER_API_KEY'))}")
+
+# Global LLM provider config (can be toggled at runtime)
+LLM_PROVIDER = {
+    "use_openrouter": bool(os.getenv("OPENROUTER_API_KEY")),
+    "openrouter_model": os.getenv("OPENROUTER_MODEL", "google/gemma-3-27b-it:free"),
+}
 
 # Load Bible data
 BASE_DIR = os.path.dirname(__file__)
@@ -75,21 +81,47 @@ class QueryRequest(BaseModel):
 @app.get("/api/health")
 async def health():
     try:
-        api_key_configured = bool(os.getenv("GEMINI_API_KEY"))
-        
-        # Check KB status
         from rag.knowledge_base import KnowledgeBase
         kb = KnowledgeBase()
         kb_status = "ready" if kb.is_indexed() else "indexing_required"
-        
+
         return {
             "status": "ok",
-            "gemini_api_configured": api_key_configured,
-            "model": GEMINI_MODEL,
-            "kb_status": kb_status
+            "gemini_api_configured": bool(os.getenv("GEMINI_API_KEY")),
+            "openrouter_api_configured": bool(os.getenv("OPENROUTER_API_KEY")),
+            "llm_provider": "openrouter" if LLM_PROVIDER["use_openrouter"] else "gemini",
+            "active_model": LLM_PROVIDER["openrouter_model"] if LLM_PROVIDER["use_openrouter"] else GEMINI_MODEL,
+            "kb_status": kb_status,
         }
     except Exception as e:
         return {"status": "error", "message": str(e)}
+
+
+@app.get("/api/openrouter/models")
+async def openrouter_free_models():
+    """List all free models available on OpenRouter."""
+    from agents.base_agent import BaseAgent
+    return await BaseAgent.list_free_models()
+
+
+class SetModelRequest(BaseModel):
+    model_id: str
+    use_openrouter: bool = True
+
+
+@app.post("/api/openrouter/set-model")
+async def set_openrouter_model(req: SetModelRequest):
+    """Switch the active LLM model at runtime."""
+    LLM_PROVIDER["use_openrouter"] = req.use_openrouter
+    if req.use_openrouter:
+        LLM_PROVIDER["openrouter_model"] = req.model_id
+        os.environ["OPENROUTER_MODEL"] = req.model_id
+    logging.info(f"LLM provider switched: openrouter={req.use_openrouter}, model={req.model_id}")
+    return {
+        "status": "ok",
+        "llm_provider": "openrouter" if req.use_openrouter else "gemini",
+        "active_model": req.model_id,
+    }
 
 
 @app.get("/api/books")
@@ -135,7 +167,9 @@ async def get_verse(
 @app.post("/api/parse-query")
 async def parse_query(request: QueryRequest):
     from agents.intake_agent import IntakeAgent
-    agent = IntakeAgent()
+    agent = IntakeAgent(use_openrouter=LLM_PROVIDER["use_openrouter"])
+    if LLM_PROVIDER["use_openrouter"]:
+        agent.openrouter_model = LLM_PROVIDER["openrouter_model"]
     return await agent.process(request.raw_query, request.default_translation)
 
 
@@ -145,6 +179,8 @@ async def interpret(request: InterpretRequest):
     orchestrator = OrchestratorAgent(
         strongs_data=STRONGS_DATA,
         book_metadata=BOOK_METADATA,
+        use_openrouter=LLM_PROVIDER["use_openrouter"],
+        openrouter_model=LLM_PROVIDER["openrouter_model"],
     )
     result = await orchestrator.run(
         reference=request.reference,

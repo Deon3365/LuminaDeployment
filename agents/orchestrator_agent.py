@@ -13,10 +13,20 @@ GEMINI_ERROR_MSG = (
 
 
 class OrchestratorAgent:
-    def __init__(self, strongs_data: dict, book_metadata: dict):
+    def __init__(self, strongs_data: dict, book_metadata: dict,
+                 use_openrouter: bool = False, openrouter_model: str = None):
         self.strongs_data  = strongs_data
         self.book_metadata = book_metadata
         self.retriever = RAGRetriever()
+        self.use_openrouter = use_openrouter
+        self.openrouter_model = openrouter_model
+
+    def _make_agent(self, AgentClass, *args):
+        """Instantiate an agent with OpenRouter config propagated."""
+        agent = AgentClass(*args, use_openrouter=self.use_openrouter)
+        if self.openrouter_model:
+            agent.openrouter_model = self.openrouter_model
+        return agent
 
     def _detect_testament(self, reference: str) -> str:
         nt_books = [
@@ -47,7 +57,7 @@ class OrchestratorAgent:
         testament   = self._detect_testament(reference)
 
         # ── Step 1: Fetch Bible text (bible-api.com, no LLM needed) ──
-        trans_agent    = TranslationAgent()
+        trans_agent    = self._make_agent(TranslationAgent)
         trans_result   = await trans_agent.process(reference, translation)
         if isinstance(trans_result, dict) and "error" in trans_result:
             return {
@@ -65,10 +75,10 @@ class OrchestratorAgent:
         rag_context = self.retriever.get_context_bundle(reference, testament, key_terms)
 
         # ── Step 2: Run all AI agents in parallel ──
-        hist_agent  = HistoricalAgent(self.book_metadata)
-        lit_agent   = LiteraryAgent(self.book_metadata)
-        theo_agent  = TheologicalAgent()
-        word_agent  = WordStudyAgent(self.strongs_data)
+        hist_agent  = self._make_agent(HistoricalAgent, self.book_metadata)
+        lit_agent   = self._make_agent(LiteraryAgent, self.book_metadata)
+        theo_agent  = self._make_agent(TheologicalAgent)
+        word_agent  = self._make_agent(WordStudyAgent, self.strongs_data)
 
         hist_res, lit_res, theo_res, word_res = await asyncio.gather(
             hist_agent.process(reference, rag_context.get("historical_cultural")),
@@ -77,13 +87,13 @@ class OrchestratorAgent:
             word_agent.process(reference, key_terms[:6], testament),
         )
 
-        # ── Check Gemini API errors ──
+        # ── Check API errors ──
         err = self._check_errors(hist_res, lit_res, theo_res, word_res)
         if err:
             return {
                 "reference": reference,
                 "error": err.get("error"),
-                "message": err.get("message", "An error occurred during Gemini API inference."),
+                "message": err.get("message", "An error occurred during LLM inference."),
                 "translations_available": trans_result.get("translations", {}),
             }
 
@@ -94,7 +104,7 @@ class OrchestratorAgent:
             f"Core agreements: {', '.join(theo_res.get('core_agreements', []))}\n"
             f"Related Scriptures: {', '.join(rag_context.get('related_verses', []))[:200]}"
         )
-        app_agent  = ApplicationAgent()
+        app_agent  = self._make_agent(ApplicationAgent)
         app_result = await app_agent.process(reference, ctx)
 
         if isinstance(app_result, dict) and "error" in app_result:
@@ -122,5 +132,8 @@ class OrchestratorAgent:
             "literary_canonical":    lit_res,
             "theological_doctrinal": theo_res,
             "application_reflection": app_result,
-            "rag_context":           rag_context # Pass to frontend for sidebar
+            "rag_context":           rag_context
         }
+
+
+

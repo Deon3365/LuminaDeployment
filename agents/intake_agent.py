@@ -28,8 +28,9 @@ class IntakeAgent(BaseAgent):
         result = await self.call_gemini(SYSTEM, user_prompt)
         # Provide sensible defaults if parsing fails
         if "error" in result:
-            # Propagate critical service errors
-            if result.get("error") in ["GEMINI_API_KEY_MISSING", "RATE_LIMIT", "UNKNOWN_ERROR"] or str(result.get("error")).startswith("GEMINI_API_ERROR_"):
+            # Propagate critical service errors (Gemini or OpenRouter)
+            err_code = str(result.get("error", ""))
+            if err_code in ["GEMINI_API_KEY_MISSING", "OPENROUTER_API_KEY_MISSING", "RATE_LIMIT", "UNKNOWN_ERROR"] or err_code.startswith(("GEMINI_API_ERROR_", "OPENROUTER_ERROR_")):
                 return result
             return {
                 "reference": raw_query,
@@ -38,3 +39,4 @@ class IntakeAgent(BaseAgent):
                 "focus_terms": []
             }
         return result
+

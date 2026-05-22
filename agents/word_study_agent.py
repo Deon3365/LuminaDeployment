@@ -34,9 +34,9 @@ Output ONLY this JSON:
 
 
 class WordStudyAgent(BaseAgent):
-    def __init__(self, strongs_data: dict):
-        super().__init__()
-        self.strongs_data = strongs_data
+    def __init__(self, strongs_data: dict = None, **kwargs):
+        super().__init__(**kwargs)
+        self.strongs_data = strongs_data or {}
 
     async def process(self, reference: str, key_terms: list, testament: str = "NT") -> dict:
         if not key_terms:

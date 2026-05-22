@@ -31,9 +31,9 @@ Output ONLY this JSON:
 
 
 class HistoricalAgent(BaseAgent):
-    def __init__(self, book_metadata: dict):
-        super().__init__()
-        self.book_metadata = book_metadata
+    def __init__(self, book_metadata: dict = None, **kwargs):
+        super().__init__(**kwargs)
+        self.book_metadata = book_metadata or {}
 
     def _get_book_meta(self, book_name: str) -> dict:
         for b in self.book_metadata.get("books", []):
