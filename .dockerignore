@@ -1,0 +1,17 @@
+# .dockerignore
+# Exclude environment files and local artefacts from Docker build
+.env
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.DS_Store
+.idea/
+.vscode/
+.git/
+.github/
+
+# Exclude test and debug files if any
+*.log

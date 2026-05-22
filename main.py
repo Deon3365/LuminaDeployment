@@ -12,6 +12,10 @@ from pydantic import BaseModel
 from typing import List
 
 load_dotenv()
+# Log whether Gemini API key is present (will show True/False, not the key itself)
+import logging
+logging.basicConfig(level=logging.INFO)
+logging.info(f"GEMINI_API_KEY configured: {bool(os.getenv('GEMINI_API_KEY'))}")
 
 # Load Bible data
 BASE_DIR = os.path.dirname(__file__)
